@@ -1,16 +1,4 @@
 # Ignore all files named .DS_Store or ending with .log
 **/.DS_Store
 **.log
-wp-config.php
-base_conf
-plugins
-themes/seemax-theme/node_modules
-ai1wm-backups
-upload-backup
-uploads
-languages
-mu-plugins
-upgrade
-wp-content.zip
-debug.log
-updraft
+node_modules
