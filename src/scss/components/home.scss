@@ -1,0 +1,284 @@
+.home-page {
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+//////////////////////////
+/// OWNER STYLES ////
+////////////////////////
+
+.single-owner {
+  width:100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom:70px;
+  margin-top:60px;
+  perspective:2000px;
+  perspective-origin:top;
+
+  .content {
+    padding:0px 25px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    transform-origin: 50% 0%;
+  }
+}
+
+.owner-area {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  font-family: 'Wotfard', sans-serif;
+  border-radius:0 0 0 90px;
+  border:5px solid white;
+  box-shadow: inset 0px 8px 6px -2px rgba(0,0,0,0.25);
+  background: linear-gradient(#CF5300, #ea7425, #CF5300);
+}
+
+.owner-background {
+  overflow: hidden;
+  border-radius:0px 0 0 90px;
+  opacity:.12;
+  background-image: url("/../wp-content/themes/seemax-theme/dist/images/leather-dimple.svg");
+  background-size: 12px 12px;
+}
+
+.owner-rank {
+  height:60px;
+  width:60px;
+}
+
+.rank-icon {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height:55px;
+  width:55px;
+  font-family:'Wotfard';
+  color:#efb744;
+  font-weight:500;
+  font-size:22px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+  line-height: 1;
+  text-align: center;
+  padding:0px 5px 4px 0px;
+  border-radius:0px 0px 40px 0px;
+  border-right:5px solid #B28432;
+  border-bottom:5px solid #B28432;
+  border-right:5px solid white;
+  border-bottom:5px solid white;
+  box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.15);
+}
+
+.owner-info {
+  position:relative;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  align-content:center;
+  flex:1;
+  position: relative;
+  padding-left:20px;
+  margin:50px 0 46px 0;
+}
+
+.group-name {
+  width:100%;
+  display: flex;
+  position: relative;
+  padding-right:20px;
+  padding-bottom:8px;
+}
+
+.nickname {
+  font-size:60px;
+  line-height: 1.1;
+  font-weight:700;
+  color:black;
+  color:white;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+  margin-bottom:0px;
+}
+
+
+.title-wins-count {
+  position: relative;
+  font-family: 'Open Sans';
+  font-weight:600;
+  font-size:22px;
+  color:white;
+  // border-top:1px solid white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.25);
+  padding:0px 0 0 5px;
+  
+  span {
+    font-size:16px;
+    font-weight:400;
+    color:white;
+    // color:white;
+  }
+}
+
+
+/////////////////////
+/// TEAM STYLES ////
+///////////////////
+
+.owner-teams {
+  position: relative;
+  width:50%;
+  height:100%;
+  margin-bottom:-45px;
+  overflow:hidden;
+}
+
+.owner-teams-inner {  
+  padding-top:4px;
+  width:calc(100% - 70px);
+  height:100%;
+  // border-left:1px solid white;
+  background: white;
+  box-shadow: inset 0px 8px 6px -2px rgba(0,0,0,0.25), 0px 8px 6px -2px rgba(0,0,0,0.15);
+
+}
+
+.single-team, .chart-titles, .owner-stats {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: stretch;
+  align-content: stretch;
+  height:40px;
+}
+
+.single-team, .owner-stats {
+  transition:background .3s ease;
+
+  &:hover {
+    background-color:#efb744;
+  }
+}
+
+
+.chart-titles {
+  padding-top:1px;
+  opacity:0.6;
+}
+
+.owner-stats {
+  font-weight:600;
+  font-size: 1.1em;
+  height:46px;
+}
+
+.team-info {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  align-content:center;
+  text-align: center;
+  height:100%;  
+}
+ 
+
+.team-logo {
+  padding:3px 0px;
+
+  img {
+    height:100%;
+    width:auto;
+  }
+}
+
+.team-info {
+  border-right:1px solid #efefef;
+  border-bottom:1px solid #efefef;
+  // box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.12);
+}
+
+// 1024px And Below
+@media screen and (max-width: 900px){
+  
+  .owner-teams-inner {
+    width:calc(100% - 30px);
+  }
+
+  .owner-info {
+    padding-left:10px;
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+  .header {
+    margin-bottom:0px;
+  }
+
+  .owner-teams {  
+    width: calc(100% - 20px);
+    padding-left: 30px;
+  }
+  
+  .owner-teams-inner {
+    width:100%;
+  }
+
+  .owner-info {
+    padding-right:20px;
+    margin: 30px 0 30px 0;
+  }
+
+  .single-team, .chart-titles, .owner-stats {
+    height: 36px;
+  }
+
+  .team-logo {
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+
+  .owner-info {
+    margin-top:10px;
+    flex:auto;
+    padding-left: 30px;
+  }
+
+  .owner-stats {
+    font-size:1em;
+  }
+
+  .nickname {
+    font-size: 55px;
+  }
+
+  .owner-rank {
+    width:50px;
+    height:50px;
+  }
+
+  .rank-icon {
+    height:50px;
+    width:50px;
+    font-size:24px;
+  }
+
+  .group-name {
+    padding-bottom: 14px;
+  }
+
+  .win-percent {
+    // flex:1;
+    // padding-left:20px;
+    // border-top:0px solid white;
+    // border-left:1px solid white;
+  }
+  
+}

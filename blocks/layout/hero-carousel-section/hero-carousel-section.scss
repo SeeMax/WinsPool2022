@@ -1,0 +1,108 @@
+.hero-carousel-section {
+  position: relative;
+  z-index:10 !important;
+
+  .content {
+    background: white;
+    justify-content: center;
+    padding-top:50px;
+    padding-bottom:50px;
+  }
+
+  .slick-prev-arrow, .slick-next-arrow {
+    position: absolute;
+    top:50%;
+    left:0;
+    height:30px;
+    cursor:pointer;
+    transition:opacity .3s ease;
+
+    svg {
+      width:auto;
+      height:100%;
+      fill:none;
+      stroke:black;
+      stroke-width:2;
+      stroke-miterlimit:10;
+    }
+
+    &:hover {
+      opacity:1;
+    }
+  }
+
+  .slick-next-arrow {
+    left:auto;
+    right:0;
+  }
+
+  .hero-carousel-container {
+    width:100%;
+    height:auto;
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  .single-hero-carousel {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+
+  .featured-hero-vid-container {
+    height: 0;
+    width:60%;
+    margin:0 auto;
+    overflow: hidden;
+    padding-top:calc( 56.25% / 5 * 3);
+    background: white;
+    position: relative;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .featured-hero-text-half {
+
+    .seemax-button {
+      display: inline-block;
+    }
+  }
+
+  .featured-hero-image-half {
+
+    img {
+      width:100%;
+      max-width: 100%;
+      margin-bottom: 0;
+      height:auto;
+    }
+  }
+}
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+  .hero-carousel-section {
+    
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+  .hero-carousel-section {
+    
+  }
+}

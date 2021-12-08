@@ -1,0 +1,186 @@
+@import "colors";
+
+.footer {
+	margin-top:60px;
+	background: black;
+	color:white;
+
+	.content {
+		justify-content: center;
+		align-items: flex-start;
+		margin: 0px auto;
+		padding:10px 25px 30px 25px;
+	}
+
+	ul, li {
+		margin:0;
+		padding:0;
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+
+		}
+	}
+
+	i {
+		font-size:22px;
+		margin-right:8px;
+		transition:all .3s;
+
+		&:hover {
+			transform:translateY(-1px);
+		}
+	}
+
+	.menu {
+		width:100%;
+
+		ul {
+			margin:0;
+			padding:0;
+		}
+	}
+
+	.footer-tile {
+		flex:1;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: center;
+		height:auto;
+		padding:40px 40px;
+		
+		li {
+			width:auto;
+			padding-left:0;
+	
+			&:before {
+				content:"";
+			}
+	
+			&:hover {
+	
+			}
+		}
+
+		.footer-tile-header {
+			text-transform: uppercase;
+			font-weight:700;
+		}
+	
+	}
+
+	.footer-tile {
+		flex:1;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: center;
+		height:auto;
+		padding:40px 40px;
+	}
+
+	.logo-tile {
+		width:33%;
+
+		img {
+			width:100%;
+			height:auto;
+			max-width:200px;
+		}
+	}
+
+	.social-tile {
+
+		.social-li {
+
+		}
+	}
+
+	.subscribe-tile {
+
+		li {
+
+		}
+
+		.mailchimp-wrapper {
+			max-width:410px;
+			margin:0 auto;
+			flex-wrap:wrap;
+	
+			.mc-form-form {
+				width:100%;
+				display: flex;
+			}
+	
+			.mc-field-group {
+				position: relative;
+				flex:1;
+			}
+				 
+			.required {
+				width:100%;
+			}
+		}
+	
+		#mc_embed_signup {
+				
+			div.mce_inline_error {
+				position: absolute;
+				top:100%;
+				left:0;
+				width:100%;
+				height:auto;
+				margin:0;
+				padding: 10px;
+				background-color:rgba(0,0,0,0);
+				color:red;
+				font-weight:400;
+			}
+		}
+	
+		.response {
+			position: absolute;
+			top:calc(100% + 10px);
+			left:0;
+			width:100%;
+			height:auto;
+		}
+
+		.seemax-button {
+			cursor: pointer;
+
+			&:hover {
+
+			}
+		}
+	}
+
+	.copyright {
+		background:gray;
+		width:100%;
+		text-align:center;
+		padding:8px 25px;
+		font-size: 0.8em;
+		color:white;
+	}
+}
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+	.footer {
+
+	}
+}
+
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+	.footer {
+
+
+	}
+}
